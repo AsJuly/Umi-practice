@@ -1,0 +1,72 @@
+.title {
+  background: rgb(121, 242, 157);
+}
+
+.test1 {
+  background: url('../../assets//images//four.jpg');
+}
+.btns {
+  height: 60px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 30px;
+}
+h2 {
+  color: rgb(39, 104, 84);
+}
+
+@width: 100px;
+@height:@width - 20px;
+.header {
+  width: @width;
+  height: @height;
+  text-align: center;
+  color: white;
+  line-height: @height;
+  background-color: aquamarine;
+}
+
+.bordered(@topW:1px,@bottomW:2px) {
+  border-top: dotted @topW salmon;
+  border-bottom: solid @bottomW blanchedalmond;
+}
+
+#a1 {
+  color: #111;
+  .bordered();
+}
+
+#a2 {
+  color: rebeccapurple;
+  margin-top: 20px;
+  .bordered(4px,8px);
+}
+
+.next {
+  :global {
+    h3 {
+      color: aquamarine;
+    }
+    p {
+      color: blueviolet;
+    }
+  }
+}
+
+.gobl{
+  :global{
+    // global 将包裹的部分 变为全局样式  这样 打包后的样式名 前面不会有序列号
+    .text {
+      color: white;
+      font-size: 20px;
+      background-color: rgb(122, 104, 11);
+      font-weight: 600;
+    }
+    .suv {
+      color: white;
+      font-size: 20px;
+      background-color: rgb(7, 57, 144);
+      font-weight: 600;
+    }
+  }
+}

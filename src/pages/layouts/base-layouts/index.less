@@ -1,0 +1,95 @@
+.layout {
+  width: 100%;
+  height: 100%;
+}
+@width:100%;
+@height:100%;
+
+// 导航头部
+.header {
+  display: flex;
+  width: @width;
+  height: 64px;
+  padding: 0 !important;
+  position: relative;
+  background-color: white !important;
+  .logoText {
+    width: 200px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    .logoIMG {
+      font-size: 30px;
+      cursor: pointer;
+      margin: 0 10px 0 10px;
+      color: rgb(13, 241, 253);
+      line-height: 70px
+      // width: 60px;
+      // height: 60px;
+      // background-color: pink;
+    }
+  }
+
+  // 右侧信息部分
+  .right_s {
+    width: 300px;
+    height: 64px;
+    display: flex;
+    position: absolute;
+    right: 0;
+    .icons {
+      cursor: pointer;
+      font-size: 25px;
+      width: 50px;
+      text-align: center;
+      padding-top: 19.5px;
+      color: gray;
+    }
+    .icons:hover {
+      background-color: rgb(243, 236, 236);
+    }
+    .tip {
+      width: 80px;
+      cursor: pointer;
+      font-size: 25px;
+      color: gray;
+      padding-top: 19.5px;
+      text-align: center;
+    }
+    .user {
+      width: 170px;
+      height: 64px;
+      cursor: pointer;
+      font-size: 20px;
+      span {
+        margin-left: 20px;
+      }
+
+    }
+    .user:hover {
+      background-color: rgb(243, 236, 236);
+    }
+
+    // 下拉菜单样式
+    .dropdown {
+      background-color: pink;
+    }
+  }
+
+  // 头部导航
+  .Menu {
+    width: calc(@width - 200px);
+  }
+
+
+
+}
+
+.silder {
+  width: @width;
+  height: calc(@height - 64px);
+}
+
+
+
+

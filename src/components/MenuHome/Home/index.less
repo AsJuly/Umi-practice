@@ -1,0 +1,65 @@
+// .echarts {
+//   width: calc(100% - 100px) ;
+//   height: 280px;
+//   margin: 60px auto;
+// }
+
+// 头部
+.header {
+  width: 96%;
+  height: 120px;
+  display: flex;
+  margin: 20px auto;
+  .list {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-color: white;
+    .icon {
+      color: rgb(131, 59, 219);
+      margin-top: 37px;
+      margin: 37px 10px 0 40px;
+      font-size: 45px;
+    }
+    .text {
+      margin-top: 30px;
+      .text1 {
+        font-size: 22px;
+        color: rgb(94, 127, 246);
+        font-weight: 600;
+      }
+      .text2{
+        font-size: 18px;
+        color: rgb(94, 127, 246);
+        font-weight: 600;
+      }
+    }
+  }
+  .list:nth-child(4){
+    margin-right: 0;
+  }
+}
+@width:96%;
+// 内容 中间
+.content{
+  // width:1920px;
+  width: 96%;
+  margin: 30px auto;
+  height: 500px;
+  display: flex;
+  .LineChart {
+    width: 60%;
+    height: 500px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  .PieChart {
+    width: 37.5%;
+    height: 500px;
+    margin-left: 30px;
+    border-radius: 8px;
+    background-color: white;
+  }
+}

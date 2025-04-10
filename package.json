@@ -1,0 +1,55 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "postinstall": "umi generate tmp",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "jsonserver": "json-server ./jsonserver/dd"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@ant-design/pro-components": "^2.4.15",
+    "@ant-design/pro-layout": "^6.5.0",
+    "@wangeditor/editor": "^5.1.23",
+    "@wangeditor/editor-for-react": "^1.0.6",
+    "antd": "^4.19.5",
+    "echarts": "^5.4.2",
+    "echarts-for-react": "^3.0.2",
+    "immutable": "^4.3.0",
+    "json-server": "^0.17.3",
+    "keymaster": "^1.6.2",
+    "lib-flexible": "^0.3.2",
+    "postcss-px-to-viewport-8-plugin": "^1.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "roadhog-api-doc": "^1.1.2",
+    "umi": "^3.5.38"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@umijs/preset-react": "1.x",
+    "@umijs/test": "^3.5.38",
+    "lint-staged": "^10.0.7",
+    "postcss-preset-env": "^8.3.2",
+    "postcss-px-viewport": "^0.0.4",
+    "postcss-viewport-units": "^0.1.6",
+    "prettier": "^2.2.0",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
